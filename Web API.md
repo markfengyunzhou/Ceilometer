@@ -32,7 +32,7 @@
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/resources.png)
 
-## Meter
+## Meter List
 ```
    ceilometer --os-username admin \
               --os-password admin \
