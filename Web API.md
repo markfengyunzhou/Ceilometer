@@ -31,3 +31,14 @@
                resource-list
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/resources.png)
+
+## Meter
+```
+   ceilometer --os-username admin \
+              --os-password admin \
+              --os-auth-url http://100.2.30.82:5000/v3 \
+              --os-tenant-name admin \
+              --os-project-id 284e5148c8ce4ff78140dfc6df90112f \
+              meter-list
+```
+![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/meters.png)
