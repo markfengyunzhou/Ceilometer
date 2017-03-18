@@ -1,7 +1,7 @@
 # ceilometer
 Ceilometer是Openstack项目中用于计量服务的组件
 
-* 源码地址
+* 下载源码
 ```
-https://github.com/openstack/ceilometer。
+git clone https://github.com/openstack/ceilometer
 ```
