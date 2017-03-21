@@ -25,8 +25,9 @@
 ## Project & Resource List
 ```
     ceilometer --os-username admin \
-    --os-password admin \
-    --os-auth-url http://100.2.30.82:5000/v3 \
-    --os-tenant-name admin resource-list
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin \
+               resource-list
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/resources.png)
