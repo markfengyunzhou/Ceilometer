@@ -42,3 +42,5 @@
               meter-list
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/meters.png)
+
+## Statistics Examples
