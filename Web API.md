@@ -8,8 +8,8 @@ Statistics：某区间 Samples 的聚合值
 
 统计类型：
 
-cumulative：累计值
+* cumulative：累计值
 
-delta：变化值
+* delta：变化值
 
-gauge：离散或者波动值
+* gauge：离散或者波动值
