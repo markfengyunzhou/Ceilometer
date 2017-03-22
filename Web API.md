@@ -45,4 +45,4 @@
 
 ## Statistics Examples
    
-   ceilometer
+   * ceilometer
