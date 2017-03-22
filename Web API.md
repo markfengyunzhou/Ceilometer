@@ -46,6 +46,7 @@
 ## Statistics Examples
    
     统计当前租户cpu（meter）使用信息
+
 ```
     ceilometer --os-username admin \
                --os-password admin \
@@ -57,6 +58,7 @@
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_tenant.png)
    
     统计某project的cpu（meter）使用信息
+
 ```
     ceilometer --os-username admin \
                --os-password admin \
@@ -68,6 +70,7 @@
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_project.png)
 
     统计某resource的cpu（meter）使用信息
+
 ```
     ceilometer --os-username admin \
                --os-password admin \
@@ -79,6 +82,7 @@
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_resource.png)
 
     统计某user的cpu（meter）使用信息
+
 ```
     ceilometer --os-username admin \
                --os-password admin \
