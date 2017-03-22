@@ -45,24 +45,46 @@
 
 ## Statistics Examples
    
-   统计当前租户cpu（meter）使用信息
+    统计当前租户cpu（meter）使用信息
 ```
     ceilometer --os-username admin \
                --os-password admin \
                --os-auth-url http://100.2.30.82:5000/v3 \
-               --os-tenant-name admin statistics  
+               --os-tenant-name admin \
+               statistics  
                -m cpu -p 10000000   
-
 ``` 
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_tenant.png)
    
-   统计某project的cpu（meter）使用信息
+    统计某project的cpu（meter）使用信息
 ```
     ceilometer --os-username admin \
                --os-password admin \
                --os-auth-url http://100.2.30.82:5000/v3 \
-               --os-tenant-name admin  statistics  \
+               --os-tenant-name admin  \
+               statistics  \
                -m cpu -p 10000000 -q project_id=284e5148c8ce4ff78140dfc6df90112f
-
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_project.png)
+
+    统计某resource的cpu（meter）使用信息
+```
+    ceilometer --os-username admin \
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin  \
+               statistics  \
+               -m cpu -p 10000000 -q resource_id=67de99c6-792c-4a02-ab1c-c92bb310fdc3
+```
+![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_resource.png)
+
+    统计某user的cpu（meter）使用信息
+```
+    ceilometer --os-username admin \
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin  \
+               statistics  \
+               -m cpu -p 10000000 -q user_id=b4fbd043d2734b119b285a4710825937
+```
+![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_user.png)
