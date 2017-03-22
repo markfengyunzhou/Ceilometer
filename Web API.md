@@ -34,15 +34,35 @@
 
 ## Meter List
 ```
-   ceilometer --os-username admin \
-              --os-password admin \
-              --os-auth-url http://100.2.30.82:5000/v3 \
-              --os-tenant-name admin \
-              --os-project-id 284e5148c8ce4ff78140dfc6df90112f \
-              meter-list
+    ceilometer --os-username admin \
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin \
+               --os-project-id 284e5148c8ce4ff78140dfc6df90112f \
+               meter-list
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/meters.png)
 
 ## Statistics Examples
    
-   * ceilometer
+   统计当前租户cpu（meter）使用信息
+```
+    ceilometer --os-username admin \
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin statistics  
+               -m cpu -p 10000000   
+
+``` 
+![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_tenant.png)
+   
+   统计某project的cpu（meter）使用信息
+```
+    ceilometer --os-username admin \
+               --os-password admin \
+               --os-auth-url http://100.2.30.82:5000/v3 \
+               --os-tenant-name admin  statistics  \
+               -m cpu -p 10000000 -q project_id=284e5148c8ce4ff78140dfc6df90112f
+
+```
+![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_project.png)
