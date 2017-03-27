@@ -21,8 +21,9 @@
 * Statistics: 某区间 Samples 的聚合值 （Count、Max、Min、Avg、Sum）
 
 
+## Python Client
 
-## Project & Resource List
+### Project & Resource List
 ```
     ceilometer --os-username admin \
                --os-password admin \
@@ -32,7 +33,7 @@
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/resources.png)
 
-## Meter List
+### Meter List
 ```
     ceilometer --os-username admin \
                --os-password admin \
@@ -43,7 +44,7 @@
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/meters.png)
 
-## Statistics Examples
+### Statistics Examples
    
 * 统计当前租户cpu（meter）使用信息
 
@@ -92,3 +93,14 @@
                -m cpu -p 10000000 -q user_id=b4fbd043d2734b119b285a4710825937
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_user.png)
+
+## Web Api
+
+### 获取token
+```
+curl -i -X POST http://192.168.1.60:35357/v3/auth/tokens -H "Content-type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user" : {"id": "e9eb5c29d4cf42f6aa21163214dd7768", "password": "admin"}}}, "scope" : {"project" : {"id" : "336283a3c08146e8846c86f82d26c2d5"}}}}' | grep Token
+```
+### Resource List
+```
+curl -g -i -X 'GET' 'http://192.168.1.60:8777/v2/resources' -H 'X-Auth-Token: 1f89262614a04559923fff21ac453ba5'
+```
