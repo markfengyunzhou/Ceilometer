@@ -1,14 +1,14 @@
-### step 1: 
+## step 1: 
 ```
 curl -i -X POST http://192.168.147.130:35357/v3/auth/tokens -H "Content-type: application/json" -d '{"auth": {"identity": {"methods": ["password"], "password": {"user" : {"id": "09fd1ed8be4b4805be52afd1d06ec044", "password": "admin"}}}, "scope" : {"project" : {"id" : "0c05d69ecac3431d9853657b30e5de6d"}}}}' | grep Token
 ```
 
-### step 2:
+## step 2:
 ```
 curl -g -i -X 'GET' 'http://192.168.147.130:8041/v1/resource/instance' -H 'X-Auth-Token: 6a87be2d125a4be89f8b89f859408f11'
 ```
 
-### info:
+## info:
 [
     {
         "created_by_user_id": "3d69cde6ad9845ebb3c1fca855f6b5a8",
