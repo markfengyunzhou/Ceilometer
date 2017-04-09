@@ -9,6 +9,7 @@ curl -g -i -X 'GET' 'http://192.168.147.130:8041/v1/resource/instance' -H 'X-Aut
 ```
 
 ## info:
+```
 [
     {
         "created_by_user_id": "3d69cde6ad9845ebb3c1fca855f6b5a8",
@@ -113,3 +114,4 @@ curl -g -i -X 'GET' 'http://192.168.147.130:8041/v1/resource/instance' -H 'X-Aut
         "display_name": "test2"
     }
 ]
+```
