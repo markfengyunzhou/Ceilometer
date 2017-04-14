@@ -94,6 +94,15 @@
 ```
 ![](https://github.com/markfengyunzhou/Ceilometer/blob/master/Images/statistics_user.png)
 
+* 按指定时间段统计某user的cpu（meter）使用信息
+
+```
+    ceilometer statistics \
+               -m cpu -p 10000 \
+               -q 'user_id=b4fbd043d2734b119b285a4710825937;timestamp<2017-04-13T00:00:00;timestamp>2017-04-10T00:00:00'
+
+```
+
 ## Web Api
 
 ### 获取token
