@@ -1,3 +1,30 @@
+## resource rest api
+```
+curl -g -i -X 'GET' 'http://192.168.147.130:8041/v1/resource' -H 'X-Auth-Token: 4da8068605f8413fb31054823308516c'
+```
+```
+{
+    "instance_network_interface": "http://192.168.147.130:8041/v1/resource/instance_network_interface",
+    "ceph_account": "http://192.168.147.130:8041/v1/resource/ceph_account",
+    "network": "http://192.168.147.130:8041/v1/resource/network",
+    "host_network_interface": "http://192.168.147.130:8041/v1/resource/host_network_interface",
+    "generic": "http://192.168.147.130:8041/v1/resource/generic",
+    "ipmi": "http://192.168.147.130:8041/v1/resource/ipmi",
+    "image": "http://192.168.147.130:8041/v1/resource/image",
+    "host_disk": "http://192.168.147.130:8041/v1/resource/host_disk",
+    "swift_account": "http://192.168.147.130:8041/v1/resource/swift_account",
+    "volume": "http://192.168.147.130:8041/v1/resource/volume",
+    "instance": "http://192.168.147.130:8041/v1/resource/instance",
+    "host": "http://192.168.147.130:8041/v1/resource/host",
+    "instance_disk": "http://192.168.147.130:8041/v1/resource/instance_disk",
+    "stack": "http://192.168.147.130:8041/v1/resource/stack",
+    "identity": "http://192.168.147.130:8041/v1/resource/identity"
+}
+```
+## resource type info
+```
+curl -g -i -X 'GET' 'http://192.168.147.130:8041/v1/resource_type' -H 'X-Auth-Token: 4da8068605f8413fb31054823308516c'
+```
 ```
 [
     {
